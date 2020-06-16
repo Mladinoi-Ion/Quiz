@@ -5,8 +5,81 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="492" Width="806">
+    <Grid Margin="15">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Quiz" 
+                   Grid.Row="0" 
+                   Grid.Column="0" 
+                   Grid.ColumnSpan="2" 
+                   FontSize="40" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="5,8,5,8"/>
+
+        <TextBlock Text="Motto: Chess is the struggle against the error."
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2" 
+                   FontSize="25"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" 
+                   Margin="5,8,5,8"/>
+
+        <TextBlock Text="Name:"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   Margin="5,8,5,8"/>
+
+        <TextBlock Text="Choose the Difficulty and Start!"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="25"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Margin="5,8,5,8"/>
+
+        <TextBox x:Name="txtName"
+                 Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 VerticalContentAlignment="Center"
+                 Margin="81,8,5,8"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,8,5,8">
+            <Button x:Name="btnEasy"
+                    Content="Easy"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8"/>
+
+            <Button x:Name="btnMedium"
+                    Content="Medium"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8"/>
+
+            <Button x:Name="btnHard"
+                    Content="Hard"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8"/>
+        </StackPanel>
     </Grid>
 </Window>
