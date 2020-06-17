@@ -57,6 +57,7 @@
                    Margin="5,8,5,8"/>
 
         <TextBox x:Name="txtName"
+                 Text="{Binding Name}"
                  Grid.Row="2"
                  Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"

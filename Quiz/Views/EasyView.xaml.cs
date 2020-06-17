@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,6 +21,7 @@ namespace Quiz.Views
         public EasyView()
         {
             InitializeComponent();
+            DataContext = new EasyViewModel();
         }
     }
 }
