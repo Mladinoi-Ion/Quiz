@@ -1,2 +1,2 @@
 # Quiz
-Wpf(.NET) with MVVM Project 
+Wpf with MVVM Project 
