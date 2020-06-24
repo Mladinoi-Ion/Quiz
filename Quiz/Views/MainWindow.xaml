@@ -66,6 +66,8 @@
         <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,8,5,8">
             <Button x:Name="btnEasy"
                     Content="Easy"
+                    Command="{Binding ButtonCommand}"
+                    CommandParameter="Easy"
                     FontWeight="Bold"
                     Width="240"
                     Margin="5,8,5,8"/>
