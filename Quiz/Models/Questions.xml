@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+	<QuestionAndAnswers name="Cum se numeste partea de inceput a jocului de SAH?">
+		<CorrectAnswer>Deschidere</CorrectAnswer>
+		<WrongAnswer1>Joc de Mijloc</WrongAnswer1>
+		<WrongAnswer2>Final</WrongAnswer2>
+		<WrongAnswer3>Rocada</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+	
+	<QuestionAndAnswers name="Cum se numeste partea de mijloc a jocului de SAH?">
+		<CorrectAnswer>Joc de Mijloc</CorrectAnswer>
+		<WrongAnswer1>Deschidere</WrongAnswer1>
+		<WrongAnswer2>Final</WrongAnswer2>
+		<WrongAnswer3>Rocada</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+
+	<QuestionAndAnswers name="Cum se numeste partea de sfarsit a jocului de SAH?">
+		<CorrectAnswer>Final</CorrectAnswer>
+		<WrongAnswer1>Deschidere</WrongAnswer1>
+		<WrongAnswer2>Joc de Mijloc</WrongAnswer2>
+		<WrongAnswer3>Rocada</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+
+	<QuestionAndAnswers name="Cati pioni valoreaza un Nebun?">
+		<CorrectAnswer>3</CorrectAnswer>
+		<WrongAnswer1>2</WrongAnswer1>
+		<WrongAnswer2>4</WrongAnswer2>
+		<WrongAnswer3>1</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+
+	<QuestionAndAnswers name="Cati pioni valoreaza un Cal?">
+		<CorrectAnswer>3</CorrectAnswer>
+		<WrongAnswer1>2</WrongAnswer1>
+		<WrongAnswer2>4</WrongAnswer2>
+		<WrongAnswer3>1</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+
+	<QuestionAndAnswers name="Cati pioni valoreaza un Turn?">
+		<CorrectAnswer>5</CorrectAnswer>
+		<WrongAnswer1>7</WrongAnswer1>
+		<WrongAnswer2>4</WrongAnswer2>
+		<WrongAnswer3>6</WrongAnswer3>
+		<Difficulty>Easy</Difficulty>
+	</QuestionAndAnswers>
+</root>
