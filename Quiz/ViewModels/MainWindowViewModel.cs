@@ -10,51 +10,40 @@ namespace Quiz.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
-        private string _Name = "Ion Mladinoi";
+        private string _Name;
         public string Name
         {
             get { return _Name; }
             set { SetProperty(ref _Name, value); }
         }
 
-        public ICommand ButtonCommand { get; set; }
+        private bool _EasyIsEnabled;
+
+        public bool EasyIsEnabled
+        {
+            get { return _EasyIsEnabled; }
+            set { SetProperty(ref _EasyIsEnabled, value); }
+        }
+
+        public DelegateCommand StartQuiz { get; private set; }
 
         public MainWindowViewModel()
         {
-            ButtonCommand = new RelayCommand(new Action<object>(ShowWindow));
+            StartQuiz = new DelegateCommand(Execute, CanExecute);
         }
 
-        public void ShowWindow(object obj)
+        private void Execute()
         {
-            if (obj.ToString() == "Easy")
+            if (EasyIsEnabled)
             {
                 EasyView easyView = new EasyView();
                 easyView.Show();
             }
         }
 
-        internal class RelayCommand : ICommand
+        private bool CanExecute()
         {
-            private Action<object> _action;
-            public RelayCommand(Action<object> action)
-            {
-                _action = action;
-            }
-
-            public bool CanExecute(object parameter)
-            {
-                return true;
-            }
-
-            public event EventHandler CanExecuteChanged;
-
-            public void Execute(object parameter)
-            {
-                if (parameter != null)
-                {
-                    _action(parameter);
-                }
-            }
+            return true;
         }
     }
 }
