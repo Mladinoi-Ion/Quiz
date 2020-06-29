@@ -1,4 +1,5 @@
-﻿using Quiz.ViewModels;
+﻿using Quiz.Models;
+using Quiz.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Text;

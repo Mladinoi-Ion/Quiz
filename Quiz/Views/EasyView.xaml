@@ -29,6 +29,7 @@
                    Margin="5,8,5,8"/>
 
         <TextBox x:Name="txtQuestion"
+                 Text= "{Binding NameQuestion}"
                  Grid.Row="1"
                  Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"
