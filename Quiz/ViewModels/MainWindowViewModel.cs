@@ -10,7 +10,7 @@ namespace Quiz.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
-        private string _Name;
+        private string _Name = "Mladinoi Ion";
         public string Name
         {
             get { return _Name; }

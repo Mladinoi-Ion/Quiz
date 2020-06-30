@@ -37,21 +37,25 @@
 
         <StackPanel Orientation="Vertical" Grid.Row="2" Grid.ColumnSpan="2" Margin="5,8,5,8">
             <RadioButton x:Name="btnEasy1"
+                         Content="{Binding Correct_Answer}"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
             <RadioButton x:Name="btnEasy2"
+                         Content="{Binding Wrong_Answer1}"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
             <RadioButton x:Name="btnEasy3"
+                         Content="{Binding Wrong_Answer2}"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
             <RadioButton x:Name="btnEasy4"
+                         Content="{Binding Wrong_Answer3}"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
@@ -59,6 +63,7 @@
 
         <Button x:Name="btnEasyNext"
                 Content="Next"
+                Command="{Binding ButtonNext}"
                 Grid.Row="3"
                 Grid.ColumnSpan="2"
                 HorizontalAlignment="Center"
