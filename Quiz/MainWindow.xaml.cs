@@ -24,7 +24,12 @@ namespace Quiz
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            //DataContext = new MainWindowViewModel();
+        }
+
+        private void EasyView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new EasyViewModel();
         }
     }
 }

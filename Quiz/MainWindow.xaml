@@ -3,9 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Quiz"
+        xmlns:views="clr-namespace:Quiz.Views"
+        xmlns:viewmodels="clr-namespace:Quiz.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="492" Width="806">
+        Title="MainWindow" Height="679" Width="831">
+
+    <Window.Resources>
+        <DataTemplate x:Name="easyViewTemplate" DataType="{x:Type viewmodels:EasyViewModel}">
+            <views:EasyView DataContext="{Binding}"/>
+        </DataTemplate>
+    </Window.Resources>
+    
     <Grid Margin="15">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -13,6 +21,9 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -58,44 +69,33 @@
                    Margin="5,8,5,8"/>
 
         <TextBox x:Name="txtName"
-                 Text="{Binding Name}"
+                 Text="Mladinoi Ion"
                  Grid.Row="2"
                  Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"
                  Margin="81,8,5,8"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,8,5,8">
-            <RadioButton x:Name="btnEasy"
-                         Content="Easy"
-                         HorizontalContentAlignment="Center"
-                         IsChecked="{Binding EasyIsEnabled}"
-                         FontWeight="Bold"
-                         Width="240"
-                         Margin="5,8,5,8"/>
+            <Button x:Name="btnEasy"
+                    Content="Easy"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8" 
+                    Click="EasyView_Clicked"/>
 
-            <RadioButton x:Name="btnMedium"
-                         Content="Medium"
-                         HorizontalContentAlignment="Center"
-                         FontWeight="Bold"
-                         Width="240"
-                         Margin="5,8,5,8"/>
+            <Button x:Name="btnMedium"
+                    Content="Medium"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8"/>
 
-            <RadioButton x:Name="btnHard"
-                         Content="Hard"
-                         HorizontalContentAlignment="Center"
-                         FontWeight="Bold"
-                         Width="240"
-                         Margin="5,8,5,8"/>
+            <Button x:Name="btnHard"
+                    Content="Hard"
+                    FontWeight="Bold"
+                    Width="240"
+                    Margin="5,8,5,8"/>
         </StackPanel>
 
-        <Button x:Name="btnStart"
-                Content="Start"
-                HorizontalContentAlignment="Center"
-                Command="{Binding StartQuiz}"
-                FontWeight="Bold"
-                Grid.Row="5"
-                Grid.ColumnSpan="2"
-                Width="300"
-                Margin="5,8,5,8"/>
+        <ContentControl Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Content="{Binding}"/>
     </Grid>
 </Window>

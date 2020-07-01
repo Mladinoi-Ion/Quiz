@@ -3,11 +3,11 @@
 namespace Quiz.Views
 {
     /// <summary>
-    /// Interaction logic for EasyView.xaml
+    /// Interaction logic for HardView.xaml
     /// </summary>
-    public partial class EasyView : UserControl
+    public partial class HardView : UserControl
     {
-        public EasyView()
+        public HardView()
         {
             InitializeComponent();
         }

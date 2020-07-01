@@ -1,50 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <root>
-	<QuestionAndAnswers name="Cum se numeste partea de inceput a jocului de SAH?">
-		<CorrectAnswer>Deschidere</CorrectAnswer>
-		<WrongAnswer1>Joc de Mijloc</WrongAnswer1>
-		<WrongAnswer2>Final</WrongAnswer2>
-		<WrongAnswer3>Rocada</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cum se numeste partea de inceput a jocului de SAH?" mode="easy">
+		<Answer isValid="true">Deschidere</Answer>
+		<Answer isValid="false">Joc de Mijloc</Answer>
+		<Answer isValid="false">Final</Answer>
+		<Answer isValid="false">Rocada</Answer>
+	</QuestionAndAnswer>
 	
-	<QuestionAndAnswers name="Cum se numeste partea de mijloc a jocului de SAH?">
-		<CorrectAnswer>Joc de Mijloc</CorrectAnswer>
-		<WrongAnswer1>Deschidere</WrongAnswer1>
-		<WrongAnswer2>Final</WrongAnswer2>
-		<WrongAnswer3>Rocada</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cum se numeste partea de mijloc a jocului de SAH?" mode="easy">
+		<Answer isValid="true">Joc de Mijloc</Answer>
+		<Answer isValid="false">Deschidere</Answer>
+		<Answer isValid="false">Final</Answer>
+		<Answer isValid="false">Rocada</Answer>
+	</QuestionAndAnswer>
 
-	<QuestionAndAnswers name="Cum se numeste partea de sfarsit a jocului de SAH?">
-		<CorrectAnswer>Final</CorrectAnswer>
-		<WrongAnswer1>Deschidere</WrongAnswer1>
-		<WrongAnswer2>Joc de Mijloc</WrongAnswer2>
-		<WrongAnswer3>Rocada</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cum se numeste partea de sfarsit a jocului de SAH?" mode="easy">
+		<Answer isValid="true">Final</Answer>
+		<Answer isValid="false">Deschidere</Answer>
+		<Answer isValid="false">Joc de Mijloc</Answer>
+		<Answer isValid="false">Rocada</Answer>
+	</QuestionAndAnswer>
 
-	<QuestionAndAnswers name="Cati pioni valoreaza un Nebun?">
-		<CorrectAnswer>3</CorrectAnswer>
-		<WrongAnswer1>2</WrongAnswer1>
-		<WrongAnswer2>4</WrongAnswer2>
-		<WrongAnswer3>1</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cati pioni valoreaza un Nebun?" mode="easy">
+		<Answer isValid="true">3</Answer>
+		<Answer isValid="false">2</Answer>
+		<Answer isValid="false">4</Answer>
+		<Answer isValid="false">1</Answer> 
+	</QuestionAndAnswer>
 
-	<QuestionAndAnswers name="Cati pioni valoreaza un Cal?">
-		<CorrectAnswer>3</CorrectAnswer>
-		<WrongAnswer1>2</WrongAnswer1>
-		<WrongAnswer2>4</WrongAnswer2>
-		<WrongAnswer3>1</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cati pioni valoreaza un Cal?" mode="easy">
+		<Answer isValid="true">3</Answer>
+		<Answer isValid="false">2</Answer>
+		<Answer isValid="false">4</Answer>
+		<Answer isValid="false">1</Answer>
+	</QuestionAndAnswer>
 
-	<QuestionAndAnswers name="Cati pioni valoreaza un Turn?">
-		<CorrectAnswer>5</CorrectAnswer>
-		<WrongAnswer1>7</WrongAnswer1>
-		<WrongAnswer2>4</WrongAnswer2>
-		<WrongAnswer3>6</WrongAnswer3>
-		<Difficulty>Easy</Difficulty>
-	</QuestionAndAnswers>
+	<QuestionAndAnswer name="Cati pioni valoreaza un Turn?" mode="hard">
+		<Answer isValid="true">5</Answer>
+		<Answer isValid="false">7</Answer>
+		<Answer isValid="false">4</Answer>
+		<Answer isValid="false">6</Answer>
+	</QuestionAndAnswer>
 </root>

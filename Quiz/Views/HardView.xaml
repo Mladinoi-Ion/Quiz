@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Quiz.Views.EasyView"
+﻿<UserControl x:Class="Quiz.Views.HardView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,33 +29,28 @@
                    Margin="5,8,5,8"/>
 
         <TextBox x:Name="txtQuestion"
-                 Text= "{Binding NameQuestion}"
                  Grid.Row="1"
                  Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"
                  Margin="5,8,5,8" />
 
         <StackPanel Orientation="Vertical" Grid.Row="2" Grid.ColumnSpan="2" Margin="5,8,5,8">
-            <RadioButton x:Name="btnEasy1"
-                         Content="{Binding Correct_Answer}"
+            <CheckBox x:Name="btnEasy1"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
-            <RadioButton x:Name="btnEasy2"
-                         Content="{Binding Wrong_Answer1}"
+            <CheckBox x:Name="btnEasy2"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
-            <RadioButton x:Name="btnEasy3"
-                         Content="{Binding Wrong_Answer2}"
+            <CheckBox x:Name="btnEasy3"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
 
-            <RadioButton x:Name="btnEasy4"
-                         Content="{Binding Wrong_Answer3}"
+            <CheckBox x:Name="btnEasy4"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
