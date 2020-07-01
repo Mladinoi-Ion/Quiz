@@ -9,8 +9,11 @@
         Title="MainWindow" Height="679" Width="831">
 
     <Window.Resources>
-        <DataTemplate x:Name="easyViewTemplate" DataType="{x:Type viewmodels:EasyViewModel}">
-            <views:EasyView DataContext="{Binding}"/>
+        <DataTemplate x:Name="singleChoiceViewTemplate" DataType="{x:Type viewmodels:SingleChoiceViewModel}">
+            <views:SingleChoiceView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="multipleChoicesViewTemplate" DataType="{x:Type viewmodels:MultipleChoicesViewModel}">
+            <views:MultipleChoicesView DataContext="{Binding}"/>
         </DataTemplate>
     </Window.Resources>
     

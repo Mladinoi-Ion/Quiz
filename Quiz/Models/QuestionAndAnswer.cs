@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Quiz.Models
 {
-    public class QuestionsAndAnswer
+    public class QuestionAndAnswer
     {
         public string Name { get; private set; }
         public IEnumerable<Answer> Answers { get; set; }
         public DifficultyType Difficulty { get; private set; }
 
-        public QuestionsAndAnswer(string name, DifficultyType difficulty, IEnumerable<Answer> answers)
+        public QuestionAndAnswer(string name, DifficultyType difficulty, IEnumerable<Answer> answers)
         {
             Name = name;
             Difficulty = difficulty;

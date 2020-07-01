@@ -1,10 +1,6 @@
-﻿using Quiz.Models;
-using Quiz.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,21 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Quiz
+namespace Quiz.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MultipleChoicesView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MultipleChoicesView : UserControl
     {
-        public MainWindow()
+        public MultipleChoicesView()
         {
             InitializeComponent();
-        }
-
-        private void EasyView_Clicked(object sender, RoutedEventArgs e)
-        {
-            DataContext = new QuizViewModel(QuestionType.EasyQuestion);
         }
     }
 }
