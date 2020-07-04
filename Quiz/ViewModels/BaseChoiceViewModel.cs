@@ -8,6 +8,11 @@ namespace Quiz.ViewModels
 {
     public class BaseChoiceViewModel : BindableBase
     {
+        public BaseChoiceViewModel(QuestionAndAnswer questionAndAnswer)
+        {
+            SetQuestion(questionAndAnswer);
+        }
+
         private string _currentQuestionName;
         public string CurrentQuestionName
         {
@@ -20,6 +25,12 @@ namespace Quiz.ViewModels
         {
             get => _currentAnswers;
             set => SetProperty(ref _currentAnswers, value);
+        }
+
+        private void SetQuestion(QuestionAndAnswer questionAndAnswer)
+        {
+            CurrentQuestionName = questionAndAnswer.Name;
+            CurrentAnswers = questionAndAnswer.Answers;
         }
     }
 }

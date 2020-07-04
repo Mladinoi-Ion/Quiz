@@ -9,12 +9,10 @@ namespace Quiz.Models
     {
         public string Name { get; private set; }
         public IEnumerable<Answer> Answers { get; set; }
-        public DifficultyType Difficulty { get; private set; }
 
-        public QuestionAndAnswer(string name, DifficultyType difficulty, IEnumerable<Answer> answers)
+        public QuestionAndAnswer(string name, IEnumerable<Answer> answers)
         {
             Name = name;
-            Difficulty = difficulty;
             Answers = answers;
         }
     }

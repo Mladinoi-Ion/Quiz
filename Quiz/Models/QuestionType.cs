@@ -11,3 +11,4 @@ namespace Quiz.Models
         HardQuestion
     }
 }
+

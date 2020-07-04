@@ -1,4 +1,5 @@
-﻿using Quiz.Models;
+﻿using Quiz.Helpers;
+using Quiz.Models;
 using Quiz.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,26 @@ namespace Quiz
 
         private void EasyView_Clicked(object sender, RoutedEventArgs e)
         {
-            DataContext = new QuizViewModel(QuestionType.EasyQuestion);
+            DataModelHelper.InitData(QuestionType.EasyQuestion);
+            SetDataContext();
+        }
+
+        private void BtnNext_Click(object sender, RoutedEventArgs e)
+        {
+            SetDataContext();
+        }
+
+        private void SetDataContext()
+        {
+            var question = DataModelHelper.GetNextQuestion();
+            if (DataModelHelper.HasMultipleChoices)
+            {
+                DataContext = new MultipleChoicesViewModel(question);
+            }
+            else
+            {
+                DataContext = new SingleChoiceViewModel(question);
+            }
         }
     }
 }

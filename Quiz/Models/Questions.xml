@@ -36,14 +36,14 @@
 		<Answer isValid="false">1</Answer>
 	</EasyQuestion>
 
-	<EasyQuestion name="Cati pioni valoreaza un Turn?" mode="hard">
+	<EasyQuestion name="Cati pioni valoreaza un Turn?">
 		<Answer isValid="true">5</Answer>
 		<Answer isValid="false">7</Answer>
 		<Answer isValid="false">4</Answer>
 		<Answer isValid="false">6</Answer>
 	</EasyQuestion>
 
-	<MediumQuestion name="Cati pioni valoreaza un Turn?" mode="hard">
+	<MediumQuestion name="Cati pioni valoreaza un Turn?">
 		<Answer isValid="true">5</Answer>
 		<Answer isValid="false">7</Answer>
 		<Answer isValid="false">4</Answer>

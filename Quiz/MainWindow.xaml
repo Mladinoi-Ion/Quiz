@@ -6,7 +6,7 @@
         xmlns:views="clr-namespace:Quiz.Views"
         xmlns:viewmodels="clr-namespace:Quiz.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="679" Width="831">
+        Title="MainWindow" Height="739" Width="831">
 
     <Window.Resources>
         <DataTemplate x:Name="singleChoiceViewTemplate" DataType="{x:Type viewmodels:SingleChoiceViewModel}">
@@ -100,5 +100,14 @@
         </StackPanel>
 
         <ContentControl Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Content="{Binding}"/>
+
+        <Button x:Name="btnNext"
+                Content="Next"
+                Grid.Row="8"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                Margin="5,8,5,8" 
+                Width="250"
+                Click="BtnNext_Click"/>
     </Grid>
 </Window>

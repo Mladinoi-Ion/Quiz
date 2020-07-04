@@ -29,40 +29,24 @@
                    Margin="5,8,5,8"/>
 
         <TextBox x:Name="txtQuestion"
+                 Text= "{Binding CurrentQuestionName}"
                  Grid.Row="1"
                  Grid.ColumnSpan="2"
                  VerticalContentAlignment="Center"
                  Margin="5,8,5,8" />
 
-        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.ColumnSpan="2" Margin="5,8,5,8">
-            <CheckBox x:Name="btnEasy1"
+        <ItemsControl ItemsSource="{Binding Path=CurrentAnswers}" Grid.Row="2" Grid.ColumnSpan="2" Margin="5,8,5,8">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <CheckBox
+                         Content="{Binding Name}"
                          VerticalAlignment="Center"
                          VerticalContentAlignment="Center"
                          Margin="5,8,5,8"/>
-
-            <CheckBox x:Name="btnEasy2"
-                         VerticalAlignment="Center"
-                         VerticalContentAlignment="Center"
-                         Margin="5,8,5,8"/>
-
-            <CheckBox x:Name="btnEasy3"
-                         VerticalAlignment="Center"
-                         VerticalContentAlignment="Center"
-                         Margin="5,8,5,8"/>
-
-            <CheckBox x:Name="btnEasy4"
-                         VerticalAlignment="Center"
-                         VerticalContentAlignment="Center"
-                         Margin="5,8,5,8"/>
-        </StackPanel>
-
-        <Button x:Name="btnEasyNext"
-                Content="Next"
-                Command="{Binding ButtonNext}"
-                Grid.Row="3"
-                Grid.ColumnSpan="2"
-                HorizontalAlignment="Center"
-                Margin="5,8,5,8" 
-                Width="250"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </UserControl>
